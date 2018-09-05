@@ -21,7 +21,7 @@ RSpec.describe 'Services API', type: :request do
   end
 
   describe 'GET /services/:id' do
-    before { get '/services/#{service_id}' }
+    before { get "/services/#{service_id}" }
 
     it 'returns the service' do
       expect(json).not_to be_empty
@@ -34,7 +34,7 @@ RSpec.describe 'Services API', type: :request do
   end
 
   describe 'GET /services?name=:name' do
-    before { get '/services?name=#{service_name}' }
+    before { get "/services?name=#{service_name}" }
 
     it 'returns the service' do
       expect(json).not_to be_empty
@@ -47,7 +47,7 @@ RSpec.describe 'Services API', type: :request do
   end
 
   describe 'GET /services?name=:name&version=:version' do
-    before { get '/services?name=#{service_name}&version=#{service_version}' }
+    before { get "/services?name=#{service_name}&version=#{service_version}" }
 
     it 'returns the service' do
       expect(json).not_to be_empty

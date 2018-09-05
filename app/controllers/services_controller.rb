@@ -1,8 +1,8 @@
-class ServicesController < ActionController::API
-    # hasmap that will act as an inmemory store
-    
+class ServicesController < ApplicationController
     # GET /services
     def index
+        @services = Service.all
+        json_response(@services)
     end
 
     # POST /services

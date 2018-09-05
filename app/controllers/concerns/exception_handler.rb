@@ -1,0 +1,2 @@
+module ExceptionHandler
+end
