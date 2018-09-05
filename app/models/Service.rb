@@ -1,7 +1,7 @@
 class Service
   include ActiveModel::Model
 
-  attr_accessor :name, :version, :created_by
+  attr_accessor :id, :name, :version, :created_by
 
   def save!
     @@store[name] = self

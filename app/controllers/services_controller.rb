@@ -11,6 +11,7 @@ class ServicesController < ApplicationController
 
     # GET /services/:id
     def show
+        puts "requested id: #{params[:id]}"
     end
 
     # PUT /services/:id
